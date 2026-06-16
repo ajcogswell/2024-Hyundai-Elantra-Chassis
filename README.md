@@ -1,4 +1,5 @@
 # 2024-Hyundai-Elantra-Chassis
+## Note: I would not use this chassis without knowing how to code in ROBLOX Lua. You will need to reconfigure this chassis a lot to suit your needs.
 
 This is a chassis customized by me, based off A-Chassis 1.6.6 in ROBLOX studio. All of the code within this repository is code primarily written by me. Some scripts were adapted, but to a point where I can confidently say that it is my own, original work. The chassis has a custom CVT tune which, unlike the stock A-Chassis release, mimmicks gear shifts. It also has 4 light settings: Off, Parking, Low, High, in addition to automatic headlights. The chassis has a custom gui designed by me also. Additional features include:
 
