@@ -17,7 +17,7 @@ Automatic emergency braking
 Lane Keep Assist  
 Adaptive Cruise Control  
 
-Controls:
+Controls:  
 S+F to start  
 Z,X,C for indicators  
 L for light modes  
