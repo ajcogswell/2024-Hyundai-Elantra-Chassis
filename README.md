@@ -19,10 +19,10 @@ Adaptive Cruise Control
 
 Controls:
 S+F to start  
-Z,X,C for indicators
-L for light modes
-S+Q or E to shift
-G for control panel
-Right click door handles to lock/unlock
+Z,X,C for indicators  
+L for light modes  
+S+Q or E to shift  
+G for control panel  
+Right click door handles to lock/unlock  
 
 In my attempt to modernize my existing chassis, I also am moving away from scripts written by others. These will be added in time, but I'm in no rush. Please do not use, modify, or sell this chassis without giving proper credit to https://github.com/lisphm/A-Chassis and I. 
