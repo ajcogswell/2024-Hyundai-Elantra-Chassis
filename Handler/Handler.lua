@@ -67,7 +67,9 @@ f.updateWindows = function(window, toggle)
     end
 end
 
-f.Trip = function(trip) carSeat.Trip.Value = trip end
+f.Trip = function(trip) 
+    carSeat.Trip.Value = trip 
+end
 
 f.valTog = function(value)
     for _, v in ipairs(carSeat:GetDescendants()) do
@@ -77,13 +79,23 @@ f.valTog = function(value)
     end
 end
 
-f.driveMode = function(value) values.Drivemode.Value = value end
-f.Trunk = function() misc.Trunk.Trunk.H.Trunk.Value = not misc.Trunk.Trunk.H.Trunk.Value end
-f.BRAKEHOLD = function(bool) values.BrakeHeld.Value = bool end
-f.BrakeHold = function() values.Brakehold.Value = not values.Brakehold.Value end
+f.driveMode = function(value) 
+    values.Drivemode.Value = value 
+end
+f.Trunk = function() 
+    misc.Trunk.Trunk.H.Trunk.Value = not misc.Trunk.Trunk.H.Trunk.Value 
+end
+f.BRAKEHOLD = function(bool) 
+    values.BrakeHeld.Value = bool 
+end
+f.BrakeHold = function() 
+    values.Brakehold.Value = not values.Brakehold.Value 
+end
 
 f.SunRoof = function(action)
-    if busy then return end
+    if busy then 
+        return 
+    end
 
     if action == 'Up' then
         if not sunroofOpen and not sunshade and not tilt then
@@ -214,7 +226,10 @@ f.seatlocks = seatLocks
 values.Locks.Seats.Changed:Connect(seatLocks)
 values.Locks.Doors.Changed:Connect(carLocked)
 
-f.horn = function(v) carSeat.Horn.Playing = v end
+f.horn = function(v) 
+    carSeat.Horn.Playing = v 
+end
+
 values.Ambient.Changed:Connect(ambient)
 
 f.Speed = function(speed)
@@ -236,7 +251,9 @@ f.carStarted = function(bool)
     carSeat.Power.Value = bool
 end
 
-f.carStarting = function(bool) carSeat.Starting.Value = bool end
+f.carStarting = function(bool) 
+    carSeat.Starting.Value = bool 
+end
 
 f.engineKill = function()
     carSeat.EngineStart:Stop()
@@ -246,7 +263,9 @@ f.engineKill = function()
     carSeat.Power.Value = false
 end
 
-f.updateValue = function(place, value) place.Value = value end
+f.updateValue = function(place, value) 
+    place.Value = value 
+end
 
 script.Parent.OnServerEvent:Connect(function(pl, fnc, ...)
     if f[fnc] then f[fnc](...) end
